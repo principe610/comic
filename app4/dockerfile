@@ -1,0 +1,19 @@
+# Usa una imagen base de Python oficial
+FROM python:3.9-slim
+
+# Establece el directorio de trabajo en el contenedor
+WORKDIR /app
+
+# Copia los archivos de requisitos primero para aprovechar el caché de Docker
+
+
+# Instala las dependencias
+RUN pip install --no-cache-dir flask
+
+# Copia el resto del código de la aplicación
+COPY . .
+
+EXPOSE 8080
+
+# Comando para ejecutar la aplicación (ejemplo para Flask/Django)
+CMD ["python", "app.py"]  # Ajusta según tu aplicación (ej. "manage.py runserver" para Django)

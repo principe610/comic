@@ -1,0 +1,57 @@
+.sec{
+	box-shadow: 0px 0px 10px black;
+	border-width:2px;
+	float:left;
+	border-radius: 8px;
+	margin-top: 2vh;
+	height:38vh;
+}
+section{
+	width: 100%;
+}
+.sec:hover{
+	box-shadow:0px 0px 20px red;
+}
+.sub-sec{
+	height:30vh;
+	width: 100%;
+	border-radius: 8px 8px 0px 0px;
+}
+.txt-sec{
+	height: 5vh;
+	font-size: 3vh;
+	text-align: center;
+}
+body{
+	padding: 0;
+	margin: 0;
+}
+nav{
+	background: #cc1100;
+	height: 8vh;
+	width: 100%;
+	box-shadow: 0px 0px 10px black;
+}
+.mn-btn{
+	padding: 10px;
+	font-size: 19px;
+	text-align: center;
+	background: white;
+	color: black;
+	border-radius: 8px;
+	margin: 1vh;
+}
+@media screen and (max-width:750px) {
+	.sec{
+		width: 40%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}
+@media screen and (min-width:750px) {
+	.sec{
+		width: 20%;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+}
